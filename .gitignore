@@ -4,3 +4,4 @@
 *.scss.map
 
 *.zip
+node_modules/

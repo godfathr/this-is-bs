@@ -92,3 +92,7 @@ GetAndPrintTimeStamp("Finish compile themes")
 Write-Host "`n********************************************************************"
 Write-Host "`n"
 Write-Host "`n"
+
+# .....\this-is-bs\bootstrap-4.6.0> sass --style=compressed ./themes/simple-theme.scss ./themes/styleguide/simple-theme.min.css
+
+# sass --verbose --style=compressed ./themes/simple-theme.scss ./themes/styleguide/simple-theme.min.css

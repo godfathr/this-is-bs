@@ -1,7 +1,7 @@
 // Required
 @import "../scss/functions";
 
-@import "../styles/core_colors.scss";
+@import "./simple-theme-colors";
 
 @import "../scss/variables";
 @import "../scss/mixins";
@@ -9,7 +9,6 @@
 // Optional
 @import "../scss/reboot";
 @import "../scss/type";
-@import "../scss/images";
 @import "../scss/images";
 @import "../scss/code";
 @import "../scss/grid";
@@ -21,14 +20,10 @@
 @import "../scss/breadcrumb";
 @import "../scss/button-group";
 @import "../scss/buttons";
-@import "../scss/card";
-@import "../scss/carousel";
 @import "../scss/close";
-@import "../scss/code";
 @import "../scss/custom-forms";
 @import "../scss/dropdown";
 @import "../scss/forms";
-@import "../scss/grid";
 @import "../scss/input-group";
 @import "../scss/jumbotron";
 @import "../scss/list-group";
@@ -73,4 +68,8 @@ $modal-transition: transform .5s ease-out !default;
 
 .background-color-lavender {
     background-color: $lavender !important;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
