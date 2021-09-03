@@ -2,58 +2,103 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grid Demo</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="simple-theme.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grid Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="simple-theme.min.css">
+  <style>
+    div {
+      border: 1px solid gray;
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="uppercase">This is a grid demo</h1>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <h1 class="uppercase text-center">This is a grid demo</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <p class="text-center lead">To see the responsive design, narrow and grow the width of your browser 😀</p>
+          <p class="text-center lead">This row has 2 columns that should be 12/12 total columns wide that are justified
+            to the center</p>
         </div>
-        <div class="row">
-            <div class="col-6">Left column with flexbox</div>
-            <div class="col-6">Right column with flexbox</div>
+        <div class="col-6">
+            <p class="text-center lead">Read more on Bootstrap Grid system
+              <b>
+                <a class="btn btn-primary btn-small" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>
+              </b>
+            </p>
         </div>
-        <div class="row">
-            <div class="col-lg-6">Left column with grid</div>
-            <div class="col-lg-6">Right column with grid</div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <p class="text-center lead">To see the responsive design, narrow and grow the width of your browser 😀</p>
+          <p class="text-center lead">This row has 2 columns that should be 8/12 total columns wide that are justified
+            to the center</p>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-6">Left column with grid</div>
-            <div class="col-md-12 col-lg-6">Right column with grid</div>
+        <div class="col-4">
+          <p class="text-center lead">To see the responsive design, narrow and grow the width of your browser 😀</p>
+          <p class="text-center lead">This row has 2 columns that should be 8/12 total columns wide that are justified
+            to the center</p>
         </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <p class="text-center lead">To see the responsive design, narrow and grow the width of your browser 😀</p>
+          <p class="text-center lead">This row has 2 columns that should be 6/12 total columns wide that are justified
+            to the center</p>
+        </div>
+        <div class="col-3">
+          <p class="text-center lead">To see the responsive design, narrow and grow the width of your browser 😀</p>
+          <p class="text-center lead">This row has 2 columns that should be 6/12 total columns wide that are justified
+            to the center</p>
+        </div>
+      </div>
     </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="uppercase">This is a grid demo</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">Left column with flexbox</div>
-            <div class="col-6">Right column with flexbox</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">Left column with grid</div>
-            <div class="col-lg-6">Right column with grid</div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-4">Left column with grid</div>
-            <div class="col-md-12 col-lg-4">Middle column with grid</div>
-            <div class="col-md-12 col-lg-4">Right column with grid</div>
-        </div>
+    <div class="row">
     </div>
+    <div class="row">
+      <div class="col-6">Left column with flexbox</div>
+      <div class="col-6">Right column with flexbox <b>(I will never wrap)</b></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">Left column with grid</div>
+      <div class="col-lg-6">Right column with grid <b>(I will wrap vertically on narrow screens)</b></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">Left column with grid</div>
+      <div class="col-md-12 col-lg-6">Right column with grid <b>(I will wrap vertically on narrow screens)</b></div>
+    </div>
+  </div>
 
-    <script src="./js/bootstrap.min.js" async defer></script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="uppercase">This is a grid demo</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">Left column with flexbox</div>
+      <div class="col-6">Right column with flexbox <b>(I will never wrap)</b></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">Left column with grid</div>
+      <div class="col-lg-6">Right column with grid <b>(I will wrap vertically on narrow screens)</b></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-4">Left column with grid</div>
+      <div class="col-md-12 col-lg-4">Middle column with grid <b>(I will wrap vertically on narrow screens)</b></div>
+      <div class="col-md-12 col-lg-4">Right column with grid <b>(I will wrap vertically on narrow screens)</b></div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.min.js" async defer></script>
 </body>
 
 </html>
